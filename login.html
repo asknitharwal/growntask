@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+<style>
+body {
+
+	font-family: sans-serif;
+	line-height: 1.5;
+	/* background: #f3f3f3; */
+	flex-direction: column;
+		background: linear-gradient(to right, rgb(78, 78, 222), rgb(158, 40, 40));
+}
+
+.main {
+	 background-color:black;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 30px;
+	width: 35%;
+    margin: auto;
+    margin-top: 50px;
+	text-align: center; 
+	color: white;
+}
+
+
+h1 {
+	color: #f1ebf2;
+	border-bottom: 1px solid  silver;
+}
+
+label {
+	display: block;
+	width: 90%;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	text-align: left;
+	color: #e5f0f1;
+	font-weight: bold; 
+}
+
+
+input {
+	display: block;
+	width: 100%;
+    margin: auto;
+	margin-bottom: 15px;
+	padding: 10px 0px;
+	color: white;
+     border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-bottom: 2px solid rgb(213, 197, 197);
+	background: none;
+	outline: none;
+}
+
+button {
+	padding: 15px;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: none;
+	color: rgb(142, 45, 181);
+	background-color: #d3e5f1;
+	width: 80%;
+	font-size: 16px;
+	font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #9aadec;
+	color:white;
+	/* transform: scale(0.99); */
+	transition: .5s;
+}
+a{
+	text-decoration: none;
+	color: rgb(130, 134, 242);
+	font-weight: bold;
+}
+a:hover{
+	color: #7be8c9;
+	text-decoration: underline;
+}
+@media screen and (min-width:200px)  and (max-width:750px){
+	.main{
+		width: 80%;
+		/* margin: auto; */
+	}
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="main">
+		<h1>Login Form</h1>
+		<h3>Enter your login credentials</h3>
+		<form>
+			<label for="">Username:</label>
+			<input type="text"mname="first" placeholder="Enter your Username" required>
+
+			<label for="password">Password:	</label>
+			<input type="password"name="password" placeholder="Enter your Password" required>
+
+			<div class="button_div">
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+		<p>Not registered? 
+			<a href="./registration.html">Create an account</a><br>
+			<a href="./index.html">Back to Home</a>
+		</p>
+	</div>
+</body>
+
+</html>
